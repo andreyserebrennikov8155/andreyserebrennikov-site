@@ -1062,6 +1062,7 @@ h1, h2, h3, .section-title, .video-note h3, .audio-frame h3,
 }
 .project-panel[hidden],
 .audio-panel[hidden] { display: none; }
+.audio-note { margin: 14px 2px 0; font-size: 13px; line-height: 1.55; color: var(--text-soft); }
 
 @media (max-width: 680px) {
   .gift-player { grid-template-columns: 1fr; gap: 18px; padding: 20px; }

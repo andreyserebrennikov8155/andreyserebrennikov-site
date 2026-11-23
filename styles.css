@@ -805,6 +805,7 @@ img, svg { max-width: 100%; }
 }
 .project-panel[hidden],
 .audio-panel[hidden] { display: none; }
+.audio-note { margin: 14px 2px 0; font-size: 13px; line-height: 1.55; color: var(--muted); }
 
 @media (max-width: 680px) {
   .gift-player { grid-template-columns: 1fr; gap: 18px; padding: 20px; }
