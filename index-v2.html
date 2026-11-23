@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<!-- Пробная версия дизайна v2. Рабочие index.html и styles.css не изменены. -->
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Андрей Серебренников — версия v2</title>
+  <meta name="description" content="Портфолио Андрея Серебренникова: приложения, локальные инструменты, парсер нот, а также вокал и авторские песни.">
+  <meta name="theme-color" content="#0d0e12">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles-v2.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="header" id="top">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="Наверх">АС<span>.</span></a>
+
+      <nav class="nav" id="nav" aria-label="Основная навигация">
+        <a href="#about">О себе</a>
+        <a href="#projects">Проекты разработчика</a>
+        <a href="#music-projects">Проекты музыканта</a>
+        <a href="#video">Выступления с концертов</a>
+        <a href="#songs">Песни</a>
+        <a href="#photos">Фото</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Главный экран -->
+    <section class="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Вокалист · автор песен · разработчик</p>
+          <h1>Андрей<br><span>Серебренников</span></h1>
+          <p class="hero-lead">Пишу код — и пишу песни.</p>
+          <p class="hero-text">
+            Разрабатываю Android-приложения и локальные инструменты.
+            А ещё пою, пишу тексты, сочиняю музыку: от мелодии на бумаге до создания полноценной песни, записанной на студии.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">Смотреть проекты</a>
+            <a class="btn btn-ghost" href="#songs">Моя музыка</a>
+          </div>
+          <ul class="tags" aria-label="Чем я занимаюсь">
+            <li>Вокал</li><li>Автор песен</li><li>MIDI</li><li>Android</li><li>Python</li>
+          </ul>
+        </div>
+
+        <div class="hero-art">
+          <!-- Портрет для главного экрана: фото Андрея из Marina_site\photo\Andrey.jpg.
+               Копия для сайта лежит в assets/andrey-hero.jpg (900×1353, 285 КБ). -->
+          <div class="hero-portrait-wrap">
+            <img class="hero-portrait" src="assets/andrey-hero.jpg" alt="Андрей Серебренников" width="900" height="1353">
+            <div class="hero-portrait-caption"><span>голос · мелодия · код</span></div>
+          </div>
+          <div class="equalizer" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- О себе -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="section-label">01 / О себе</p>
+        <h2 class="section-title">Моё кредо по жизни</h2>
+        <p class="section-intro">«Нет предела совершенству! Стремись каждый день стать чуточку лучше, чуточку мудрее, чуточку добрее».</p>
+        <p class="section-intro">
+          Утром собираю приложение, вечером сижу за фортепиано, подбираю мелодию, разучиваю песню,
+          а ближе к ночи продолжаю добавлять новый функционал в созданные приложения
+          или начинаю разрабатывать новое и полезное приложение.
+        </p>
+
+        <div class="about-grid">
+          <article class="about-card reveal">
+            <div class="about-icon about-icon-code">&lt;/&gt;</div>
+            <h3>Разработчик</h3>
+            <p>
+              Программировать я начал ещё в 7 классе, тогда это был язык Basic. Что для меня написать
+              приложение — это возможность решить конкретную задачу, которую другие приложения,
+              которые есть на рынке, не способны выполнить полностью в силу разных причин.
+              Когда ты сам пишешь код, ты всегда можешь что-то улучшить, сделать то идеальное
+              приложение, которое полностью решит твою задачу.
+            </p>
+            <p>
+              Ещё написание кода — это как написание песни: в голове появляется только одна фраза,
+              а ты из неё создаёшь песню. Так и с кодом: в голове у тебя родилась маленькая идея,
+              и потом эта идея породила много других идей, и вот у тебя уже есть первая версия
+              приложения в голове — как оно должно работать, какой у него функционал,
+              и ты начинаешь его реализовывать. Это настолько увлекательный процесс,
+              что время летит незаметно)
+            </p>
+            <p>
+              Сначала ты получаешь удовольствие, когда создаёшь приложение, а потом получаешь
+              удовольствие от того, что пользуешься им и тебе в нём всё нравится.
+            </p>
+            <ul class="about-list">
+              <li>Постоянно осваиваю новые языки программирования и совершенствуюсь в них</li>
+              <li>Не позволяю своему мозгу работать с чем-то привычным, постоянно держу его в тонусе, чтобы он легко усваивал любую новую информацию</li>
+              <li>Создаю полезные и практичные приложения</li>
+            </ul>
+          </article>
+
+          <article class="about-card reveal">
+            <div class="about-icon about-icon-note">♪</div>
+            <h3>Вокалист и автор</h3>
+            <p>
+              Для меня песня — это возможность заглянуть к себе в душу, лучше узнать себя,
+              чего я хочу на самом деле. Через творчество: песни, рисунки мы обходим
+              психологические защиты, которые не позволяют нам увидеть кто мы, что делаем,
+              о чем думаем. Если человек духовно взрослеет, это сразу отражается на тексте песен,
+              они начинают меняться. Каждая песня отражает, что волнует автора
+              в данный период его жизни.
+            </p>
+            <p>
+              Создавать что-то новое, уникальное, это всегда интересно и это то,
+              что меня делает счастливым. Ближайшие мои планы в музыке — записать свой альбом
+              и выложить на все цифровые площадки.
+            </p>
+            <ul class="about-list">
+              <li>Пою прекрасные песни разных авторов, которые чем-то тронули моё сердце</li>
+              <li>Выступаю на разных площадках, пою для людей, делюсь частичкой своего счастья</li>
+              <li>Пишу песни и записываю их на студии</li>
+            </ul>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Разработка -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <p class="section-label">02 / Разработка</p>
+        <h2 class="section-title">Проекты разработчика</h2>
+        <div class="project-tabs" role="tablist" aria-label="Разделы проектов">
+          <button class="project-tab active" type="button" role="tab" aria-selected="true"
+                  aria-controls="projectPanelReady">Готовые проекты</button>
+          <button class="project-tab" type="button" role="tab" aria-selected="false"
+                  aria-controls="projectPanelDev">Проекты в стадии разработке</button>
+        </div>
+
+        <div class="project-panel" id="projectPanelReady" role="tabpanel">
+          <div class="projects-grid">
+            <article class="project-card reveal">
+              <div class="project-top"><span class="project-num">01</span><span class="project-kind">Android</span></div>
+              <h3>Казначей 1</h3>
+              <p>Первая версия приложения для личных финансов: учёт доходов и расходов, блокнот, цитаты и план на день. Доведена до рабочего состояния.</p>
+              <div class="project-tags"><span>Android</span><span>Capacitor</span><span>Локальные данные</span></div>
+            </article>
+          </div>
+        </div>
+
+        <div class="project-panel" id="projectPanelDev" role="tabpanel" hidden>
+          <div class="projects-grid">
+            <article class="project-card reveal">
+              <div class="project-top"><span class="project-num">01</span><span class="project-kind">В работе</span></div>
+              <h3>Web_Parser</h3>
+              <p>Веб-приложение, которое позволяет работать с текстовыми документами в разных форматах. Проект ещё в разработке.</p>
+              <div class="project-tags"><span>Веб-приложение</span><span>Текстовые документы</span><span>В разработке</span></div>
+            </article>
+          </div>
+        </div>
+
+        <p class="projects-more">
+          <a href="https://github.com/andreyserebrennikov8155" target="_blank" rel="noopener">Код на GitHub →</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Проекты музыканта -->
+    <section class="section" id="music-projects">
+      <div class="container">
+        <p class="section-label">03 / Музыка</p>
+        <h2 class="section-title">Проекты Музыканта</h2>
+        <div class="project-tabs" role="tablist" aria-label="Разделы музыкальных проектов">
+          <button class="project-tab active" type="button" role="tab" aria-selected="true"
+                  aria-controls="musicPanelReady">Готовые проекты</button>
+          <button class="project-tab" type="button" role="tab" aria-selected="false"
+                  aria-controls="musicPanelDev">Проекты в стадии разработки</button>
+        </div>
+
+        <div class="project-panel" id="musicPanelReady" role="tabpanel">
+          <div class="projects-grid">
+            <article class="project-card reveal">
+              <div class="project-top"><span class="project-num">01</span><span class="project-kind">Песня</span></div>
+              <h3>Я нарисую</h3>
+              <p>Авторская песня. Готовый вариант можно послушать в разделе «Аудио».</p>
+              <div class="project-tags"><span>Вокал</span><span>Авторская песня</span><span>Аудио</span></div>
+            </article>
+          </div>
+        </div>
+
+        <div class="project-panel" id="musicPanelDev" role="tabpanel" hidden>
+          <div class="projects-grid">
+            <article class="project-card reveal">
+              <div class="project-top"><span class="project-num">01</span><span class="project-kind">В работе</span></div>
+              <h3>Запись мини-альбома</h3>
+              <p>Собираю песни в мини-альбом: запись на студии и подготовка к публикации на цифровых площадках.</p>
+              <div class="project-tags"><span>Студия</span><span>Альбом</span><span>В работе</span></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Видео -->
+    <section class="section video-section" id="video">
+      <div class="container">
+        <p class="section-label">04 / Выступления с концертов</p>
+        <h2 class="section-title">Выступления с концертов</h2>
+        <div class="video-layout reveal" id="videoLayout">
+          <div class="video-frame">
+            <video id="andreyVideo" controls preload="metadata" playsinline
+                   poster="assets/poster-kolybelnaya.jpg"
+                   aria-label="Видео Андрея Серебренникова">
+              <source src="video/%D0%9A%D0%BE%D0%BB%D1%8B%D0%B1%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%9D%D0%B5%D0%B2%D1%8B.mp4" type="video/mp4">
+            </video>
+            <p class="video-quality" id="videoQuality" aria-live="polite">Качество видео: определяем…</p>
+          </div>
+          <div class="video-note">
+            <span class="video-note-icon" aria-hidden="true">▶</span>
+            <h3 id="videoTitle">Колыбельная Невы</h3>
+            <a class="text-link" id="videoDownload"
+               href="video/%D0%9A%D0%BE%D0%BB%D1%8B%D0%B1%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%9D%D0%B5%D0%B2%D1%8B.mp4"
+               download>Скачать видео →</a>
+          </div>
+        </div>
+
+        <!-- Подарок от разработчика -->
+        <div class="gift-player reveal">
+          <div class="gift-player-visual" aria-hidden="true">
+            <span class="gift-tag">СВОЁ ВИДЕО</span>
+            <span class="gift-play">▶</span>
+            <span class="gift-controls"><i></i></span>
+          </div>
+          <div class="gift-player-body">
+            <p class="gift-eyebrow">🎁 Подарок от разработчика</p>
+            <h3>Своё видео — в моём плеере</h3>
+            <p class="video-empty" id="videoEmpty">
+              Есть ролик, который хочется посмотреть здесь? Выбери файл с компьютера —
+              он откроется в плеере выше. Видео не загружается на сайт и никуда не сохраняется.
+              Кнопка «Снять 5 кадров» сохранит пять разных моментов по всему ролику,
+              «Снять 20 кадров с этого места» — двадцать кадров подряд с шагом 0,1 секунды от текущей
+              позиции, а «Снять 10 кадров подряд» — десять кадров по одному кадру ролика, без пропусков:
+              так видно, что именно записано в файле, и можно сравнить качество соседних кадров.
+              Кадры можно скачать по одному или все сразу архивом.
+            </p>
+            <div class="gift-actions">
+              <button class="btn btn-gift" id="pickVideoBtn" type="button">
+                <span aria-hidden="true">▶</span> Открыть своё видео
+              </button>
+              <button class="btn btn-frames" id="captureFramesBtn" type="button">
+                <span aria-hidden="true">▣</span> Снять 5 кадров
+              </button>
+              <button class="btn btn-frames" id="captureFromCursorBtn" type="button">
+                <span aria-hidden="true">▣</span> Снять 20 кадров с этого места
+              </button>
+              <button class="btn btn-frames" id="captureStepFramesBtn" type="button">
+                <span aria-hidden="true">▣</span> Снять 10 кадров подряд
+              </button>
+            </div>
+            <p class="frame-status" id="frameStatus" role="status" aria-live="polite"></p>
+            <div class="frame-results" id="frameResults" aria-label="Снимки кадров"></div>
+            <div class="frame-download">
+              <button class="btn btn-frames" id="downloadAllFramesBtn" type="button" hidden>
+                <span aria-hidden="true">⬇</span> Скачать все кадры (ZIP)
+              </button>
+            </div>
+            <input type="file" id="videoFileInput" accept="video/*" aria-label="Выбрать видеофайл" hidden>
+          </div>
+        </div>
+
+        <div class="video-picker reveal" id="videoPicker" role="group" aria-label="Список видео">
+          <button class="video-choice active" type="button"
+                  data-src="video/%D0%9A%D0%BE%D0%BB%D1%8B%D0%B1%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%9D%D0%B5%D0%B2%D1%8B.mp4"
+                  data-poster="assets/poster-kolybelnaya.jpg"
+                  data-title="Колыбельная Невы"
+                  aria-label="Видео Колыбельная Невы, 2 минуты 59 секунд">
+            <img src="assets/poster-kolybelnaya.jpg" alt="" loading="lazy"><span>Колыбельная Невы<br><small>2:59</small></span>
+          </button>
+          <button class="video-choice" type="button"
+                  data-src="video/%D0%9F%D0%B5%D1%81%D0%B5%D0%BD%D0%BA%D0%B0%20%D1%81%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D0%B0.mp4"
+                  data-poster="assets/poster-student.jpg"
+                  data-title="Песенка студента"
+                  aria-label="Видео Песенка студента, 3 минуты 42 секунды">
+            <img src="assets/poster-student.jpg" alt="" loading="lazy"><span>Песенка студента<br><small>3:42</small></span>
+          </button>
+          <button class="video-choice" type="button"
+                  data-src="video/My%20heart%20will%20go%20on.mp4"
+                  data-poster="assets/poster-my-heart.jpg"
+                  data-title="My heart will go on"
+                  aria-label="Видео My heart will go on, 1 минута 18 секунд">
+            <img src="assets/poster-my-heart.jpg" alt="" loading="lazy"><span>My heart will go on<br><small>1:18</small></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Аудио -->
+    <section class="section section-alt songs-section" id="songs">
+      <div class="container">
+        <p class="section-label">05 / Аудио</p>
+        <h2 class="section-title">Послушать записи</h2>
+        <div class="audio-tabs" role="tablist" aria-label="Разделы записей">
+          <button class="audio-tab active" type="button" role="tab" aria-selected="true"
+                  aria-controls="audioPanelMine">Мои песни</button>
+          <button class="audio-tab" type="button" role="tab" aria-selected="false"
+                  aria-controls="audioPanelCovers">Кавера</button>
+        </div>
+        <div class="songs-layout reveal">
+          <div class="audio-frame">
+            <div class="audio-label">Сейчас играет</div>
+            <h3 id="audioTitle">Я нарисую</h3>
+            <p class="audio-sub" id="audioSub">Авторская песня · Серебренников Андрей · 3:33</p>
+            <audio id="andreyAudio" controls preload="metadata" aria-label="Аудиоплеер записей Андрея Серебренникова">
+              <source src="audio/%D0%A1%D0%B5%D1%80%D0%B5%D0%B1%D1%80%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2_%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B9_%D0%AF_%D0%BD%D0%B0%D1%80%D0%B8%D1%81%D1%83%D1%8E_%D1%82%D0%B5%D0%B1%D1%8F.mp3" type="audio/mpeg">
+              Твой браузер не поддерживает воспроизведение аудио.
+            </audio>
+            <a class="text-link" id="audioDownload" href="audio/%D0%A1%D0%B5%D1%80%D0%B5%D0%B1%D1%80%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2_%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B9_%D0%AF_%D0%BD%D0%B0%D1%80%D0%B8%D1%81%D1%83%D1%8E_%D1%82%D0%B5%D0%B1%D1%8F.mp3" download>Скачать mp3 →</a>
+          </div>
+          <div class="track-list" role="group" aria-label="Список записей">
+            <div class="audio-panel" id="audioPanelMine" role="tabpanel">
+            <button class="track active" type="button"
+                    data-src="audio/%D0%A1%D0%B5%D1%80%D0%B5%D0%B1%D1%80%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2_%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B9_%D0%AF_%D0%BD%D0%B0%D1%80%D0%B8%D1%81%D1%83%D1%8E_%D1%82%D0%B5%D0%B1%D1%8F.mp3"
+                    data-title="Я нарисую" data-sub="Авторская песня · Серебренников Андрей · 3:33">
+              <span class="track-num">01</span><span class="track-name">Я нарисую<small>Авторская · Серебренников Андрей</small></span><span class="track-time">3:33</span>
+            </button>
+            <button class="track" type="button"
+                    data-src="audio/%D0%9E%D0%B6%D0%B8%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%98%D0%98%20%D0%BE%D0%B1%D1%80.mp3"
+                    data-title="Ожидание" data-sub="Авторская песня · Серебренников Андрей · аранжировка · 3:13">
+              <span class="track-num">02</span><span class="track-name">Ожидание<small>Авторская · аранжировка</small></span><span class="track-time">3:13</span>
+            </button>
+            </div>
+
+            <div class="audio-panel" id="audioPanelCovers" role="tabpanel" hidden>
+            <button class="track" type="button"
+                    data-src="audio/%D0%9B%D0%B5%D1%88%D0%B0%20%D0%9F%D0%BE%D0%B9%20-%20%D0%BD%D0%B5%20%D0%B1%D0%BE%D0%B9%D1%81%D1%8F.mp3"
+                    data-title="Не бойся" data-sub="Кавер · файл «Леша Пой» · 3:45">
+              <span class="track-num">01</span><span class="track-name">Не бойся<small>Кавер · файл «Леша Пой»</small></span><span class="track-time">3:45</span>
+            </button>
+            <button class="track" type="button"
+                    data-src="audio/%D0%90%D0%BB%D0%B0%D0%BD%20%D0%A7%D0%B5%D1%80%D0%BA%D0%B0%D1%81%D0%BE%D0%B2%20-%20%D0%A1%D0%BB%D0%B5%D0%B4%D0%BE%D0%BC%20%D0%B7%D0%B0%20%D1%82%D0%BE%D0%B1%D0%BE%D0%B9.mp3"
+                    data-title="Следом за тобой" data-sub="Кавер · Черкасов Алан · 4:32">
+              <span class="track-num">02</span><span class="track-name">Следом за тобой<small>Кавер · Черкасов Алан</small></span><span class="track-time">4:32</span>
+            </button>
+            <button class="track" type="button"
+                    data-src="audio/%D0%A2%D1%8B%20%D0%BE%D0%B1%D0%BD%D0%B8%D0%BC%D0%B5%D1%88%D1%8C%20%D0%BC%D0%B5%D0%BD%D1%8F%20-%20%D0%9A%D0%B2%D0%B0%D1%82%D1%80%D0%BE.mp3"
+                    data-title="Ты обнимешь меня" data-sub="Кавер · Кватро · 3:26">
+              <span class="track-num">03</span><span class="track-name">Ты обнимешь меня<small>Кавер · Кватро</small></span><span class="track-time">3:26</span>
+            </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Фото -->
+    <section class="section" id="photos">
+      <div class="container">
+        <p class="section-label">06 / Фото</p>
+        <h2 class="section-title">Фото</h2>
+        <p class="section-intro">Частичка моей жизни</p>
+        <div class="photo-grid reveal">
+          <div class="photo-row">
+            <a class="photo-item" href="assets/photos/photo-04.jpg" target="_blank" rel="noopener"><img src="assets/photos/photo-04.jpg" alt="Фото 4" loading="lazy"></a>
+            <a class="photo-item" href="assets/photos/photo-09.jpg" target="_blank" rel="noopener"><img src="assets/photos/photo-09.jpg" alt="Фото 9" loading="lazy"></a>
+          </div>
+          <div class="photo-row">
+            <a class="photo-item" href="assets/photos/photo-06.jpg" target="_blank" rel="noopener"><img src="assets/photos/photo-06.jpg" alt="Фото 6" loading="lazy"></a>
+            <a class="photo-item" href="assets/photos/photo-07.jpg" target="_blank" rel="noopener"><img src="assets/photos/photo-07.jpg" alt="Фото 7" loading="lazy"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Контакты -->
+    <section class="section section-alt" id="contacts">
+      <div class="container contacts-inner reveal">
+        <div>
+          <p class="section-label">07 / Контакты</p>
+          <h2 class="section-title">Связаться</h2>
+          <p class="section-intro">
+            Если хочешь обсудить приложение, инструмент или песню — напиши мне.
+          </p>
+        </div>
+        <div class="contact-links">
+          <a class="contact-link" href="https://github.com/andreyserebrennikov8155" target="_blank" rel="noopener">
+            <span class="contact-icon">⌘</span>
+            <span><strong>GitHub</strong><small>andreyserebrennikov8155</small></span>
+            <span class="contact-arrow">→</span>
+          </a>
+          <a class="contact-link" href="#top">
+            <span class="contact-icon">↑</span>
+            <span><strong>Наверх страницы</strong><small>вернуться к началу</small></span>
+            <span class="contact-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year">2026</span> Андрей Серебренников</span>
+      <span>Разработчик · Вокалист · Автор песен</span>
+      <a href="https://vk.ru/andreyserebren" target="_blank" rel="noopener">Мой профиль ВКонтакте →</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
